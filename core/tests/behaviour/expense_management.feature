@@ -29,8 +29,8 @@ Feature: Gestión de gastos
 
   Scenario: Crear tres gastos de 10, 30, 30 euros y elimino el ultimo gasto la suma son 40 euros
     Given un gestor de gastos vacío
-    When añdo un gasto de 10 euros llamado Café
-    And añado un gasto de 30 euros llamdo Comida
+    When añado un gasto de 10 euros llamado Café
+    And añado un gasto de 30 euros llamado Comida
     And añado un gasto de 40 euros llamado Transporte
     And elimino el gasto con id 3
     Then el total de dinero gastado debe ser 40 euros
