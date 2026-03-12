@@ -18,7 +18,7 @@ class Expense:
     expense_date: date
 
     def __post_init__(self):
-        
+
         if not self.title.strip():
             raise EmptyTitleError("El título no puede estar vacío")
 
